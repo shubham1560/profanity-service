@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+gunicorn = "*"
+dj-database-url = "*"
+psycopg2-binary = "*"
+profanity-check = "*"
+scikit-learn = "==0.20.2"
+djangorestframework = "*"
+pyinstaller = {file = "https://github.com/pyinstaller/pyinstaller/archive/develop.tar.gz"}
+django-cors-headers = "*"
+
+[requires]
+python_version = "3.7"

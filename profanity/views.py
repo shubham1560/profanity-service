@@ -14,3 +14,9 @@ class CheckProfanity(APIView):
         # breakpoint()
         result = get_profanity_matrix(request)
         return Response(result, status=status.HTTP_200_OK)
+
+
+class WakeUpCall(APIView):
+
+    def get(self, request, format=None):
+        return Response('', status=status.HTTP_200_OK)

@@ -1,4 +1,4 @@
-from profanity_service.profanity import profanity_array
+from profanity_service.profanity import profanity_array, profanity
 
 
 def get_profanity_matrix(request):
@@ -20,3 +20,7 @@ def extract_array_from_article_body_json(article_body):
             text_array.append(text['data']['text'])
     return text_array
 
+
+def check_string_profanity(request):
+    a = profanity(request.data['string'])
+    return a
